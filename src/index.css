@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-container {
+  width: 100%;
+  /* Ajusta el ancho del contenedor al 100% del contenedor padre */
+  height: 500px;
+  /* Define la altura deseada para el contenedor */
+  overflow: hidden;
+  /* Oculta el contenido que desborde el contenedor */
+}
+
+/* En tu archivo de estilos CSS o global */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading p {
+  margin-right: 8px;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
